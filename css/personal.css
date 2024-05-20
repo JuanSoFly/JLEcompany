@@ -1,0 +1,310 @@
+@import url(../css/clash-display.css);
+
+:root{
+  --font-base: 'ClashDisplay', sans-serif;
+  --box-shadow: 0px 15px 25px rgba (0,0,0,0.08);
+  --transition: all 1.5s ease;
+}
+
+
+body{
+  font-family: var(--font-base);
+  line-height: 1.7;
+  background: -webkit-linear-gradient(left, #dfad7f, #db8533);
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+  color: greenyellow;
+  transition: var(--transition);
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+  height: auto;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.section-padding{
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+/* navbar */
+.navbar-toggler {
+    margin-left: 5px;
+    border: none;
+  }
+  
+  #theme-container {
+    transition: background-color 0.5s ease-in-out;
+  }
+/* cards */
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+}
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+#profile-name{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+#profile-name:hover{
+    background-color: #00000057;
+    color:#ffffff;
+    transition: 1.5s ease;
+}
+
+/* pulse text keyframe */
+@keyframes pulse {
+    0% { font-weight: normal; }
+    50% { font-weight: bolder; }
+    100% { font-weight: italic; }
+  }
+  
+  #profile-name {
+    animation: pulse 5s infinite; /* Repeat infinitely */
+  }
+
+/* typing keyframe */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  #title, #title-address,
+  #fullname, #email, #phone,
+   #career, #address, #name,
+   #health, #stamina, #blood,
+   #weight, #mood {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1.5s steps(40, end);
+  }
+
+  #fullname, #email, #phone, #career, #address, #portfolio-border{
+    border-radius: 10px;
+  }
+
+  #portfolio-border{
+    background-color: white;
+  }
+/* scale transform hover */
+#erin{
+    transition: transform 1s ease;
+  }
+  
+ #erin:hover {
+    transform: scale(1.13);
+  }
+
+  #teo{
+    transition: transform 1s ease;
+  }
+  
+ #teo:hover {
+    transform: scale(1.13);
+  }
+
+  #lance{
+    transition: transform 1s ease;
+  }
+  
+ #lance:hover {
+    transform: scale(1.13);
+  }
+
+  #creator-image img{
+    transition: transform 1s ease;
+  }
+  
+ #creator-image img:hover {
+    transform: scale(1.13);
+  }
+
+
+/* scale transform hover */
+#erin{
+  transition: transform 1s ease;
+}
+
+#erin:hover {
+  transform: scale(1.13);
+}
+
+#teo{
+  transition: transform 1s ease;
+}
+
+#teo:hover {
+  transform: scale(1.13);
+}
+
+#lance{
+  transition: transform 1s ease;
+}
+
+#lance:hover {
+  transform: scale(1.13);
+}
+
+
+  /* contact */
+#contact-text{
+    border: solid #481E14 2px;
+    border-radius: 20px ;
+  }
+  
+  
+    .single_advisor_profile {
+        position: relative;
+        margin-bottom: 50px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        z-index: 1;
+        border-radius: 15px;
+        -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    }
+    .single_advisor_profile .advisor_thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        background-color: #000000;
+        overflow: hidden;
+    }
+    .single_advisor_profile .advisor_thumb::after {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: absolute;
+        width: 150%;
+        height: 80px;
+        bottom: -45px;
+        left: -25%;
+        content: "";
+        background-color: #ffffff;
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    @media only screen and (max-width: 575px) {
+        .single_advisor_profile .advisor_thumb::after {
+            height: 160px;
+            bottom: -90px;
+        }
+    }
+    .single_advisor_profile .advisor_thumb .social-info {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0;
+        right: 30px;
+        text-align: right;
+    }
+    .single_advisor_profile .advisor_thumb .social-info a {
+        font-size: 14px;
+        color: #020710;
+        padding: 0 5px;
+    }
+    .single_advisor_profile .advisor_thumb .social-info a:hover,
+    .single_advisor_profile .advisor_thumb .social-info a:focus {
+        color: greenyellow;
+    }
+    .single_advisor_profile .advisor_thumb .social-info a:last-child {
+        padding-right: 0;
+    }
+    .single_advisor_profile .single_advisor_details_info {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        text-align: right;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        border-radius: 0 0 15px 15px;
+        background-color: #000000;
+    }
+    .single_advisor_profile .single_advisor_details_info::after {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 3px;
+        background-color: greenyellow;
+        content: "";
+        top: 12px;
+        right: 30px;
+    }
+    .single_advisor_profile .single_advisor_details_info h6 {
+        margin-bottom: 0.25rem;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single_advisor_profile .single_advisor_details_info h6 {
+            font-size: 14px;
+        }
+    }
+    .single_advisor_profile .single_advisor_details_info p {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single_advisor_profile .single_advisor_details_info p {
+            font-size: 12px;
+        }
+    }
+    .single_advisor_profile:hover .advisor_thumb::after,
+    .single_advisor_profile:focus .advisor_thumb::after {
+        background-color: #7c7c7c;
+    }
+    .single_advisor_profile:hover .advisor_thumb .social-info a,
+    .single_advisor_profile:focus .advisor_thumb .social-info a {
+        color: #ffffff;
+    }
+    .single_advisor_profile:hover .advisor_thumb .social-info a:hover,
+    .single_advisor_profile:hover .advisor_thumb .social-info a:focus,
+    .single_advisor_profile:focus .advisor_thumb .social-info a:hover,
+    .single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+        color: #ffffff;
+    }
+    .single_advisor_profile:hover .single_advisor_details_info,
+    .single_advisor_profile:focus .single_advisor_details_info {
+        background-color: #7c7c7c;
+    }
+    .single_advisor_profile:hover .single_advisor_details_info::after,
+    .single_advisor_profile:focus .single_advisor_details_info::after {
+        background-color: #ffffff;
+    }
+    .single_advisor_profile:hover .single_advisor_details_info h6,
+    .single_advisor_profile:focus .single_advisor_details_info h6 {
+        color: #ffffff;
+    }
+    .single_advisor_profile:hover .single_advisor_details_info p,
+    .single_advisor_profile:focus .single_advisor_details_info p {
+        color: #ffffff;
+    }

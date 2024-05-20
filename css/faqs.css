@@ -1,0 +1,81 @@
+@import url(../css/clash-display.css);
+
+:root{
+  --font-base: 'ClashDisplay', sans-serif;
+  --box-shadow: 0px 15px 25px rgba (0,0,0,0.08);
+  --transition: all 0.5s ease;
+}
+
+
+body{
+  font-family: var(--font-base);
+  line-height: 1.7;
+  padding-top: 100px;
+  background: -webkit-linear-gradient(left, #dfad7f, #db8533);
+}
+
+#logo{
+  text-decoration: none;
+  color: greenyellow;
+  transition: var(--transition);
+}
+
+#logo:hover{
+  color: rgb(255, 255, 255);
+  height: auto;
+}
+
+
+/* navbar */
+.navbar-toggler {
+  margin-left: 10px;
+  border: none;
+}
+
+#theme-container {
+  transition: background-color 0.5s ease-in-out;
+}
+
+
+body{
+    background-color:#eee;
+    margin-top:20px;
+}
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #6c6ff5;
+}
+.nav-tabs-custom .nav-item .nav-link {
+    border: none;
+}
+
+.nav-tabs-custom .nav-item {
+    position: relative;
+    color: #271050;
+}
+.nav-tabs-custom .nav-item .nav-link.active:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.nav-tabs-custom .nav-item .nav-link::after {
+    content: "";
+    background: #db8533;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+  .btn-dark{
+    color: #db8533;
+  }
+  span{
+    color: #db8533;
+  }
