@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JLE</title>
+    <link rel="icon" type="image/x-icon" href="./images/jle_logo_TYz_icon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+<!-- bootdey -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+
+    <!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+    
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  
+  <body>
+
+    <header id="header" class="d-flex align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <img src="./images/jle-logo.png" style="width: 3%; height: 3%;">
+          <a id="logo" class="navbar-brand-light me-auto" href="index.html">JLE</a>
+          
+          <div
+            class="offcanvas offcanvas-end bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                JLE
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link scrollto mx-lg-2"
+                    aria-current="page"
+                    href="bus1.html"
+                    target="_parent"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto mx-lg-2" href="about.html" target="_parent">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link scrollto mx-lg-2" href="gallery.html" target="_parent">Gallery</a>
+                    <li class="nav-item dropdown">
+                        <a
+                          data-mdb-dropdown-init
+                          class="nav-link dropdown-toggle"
+                          href="menu.html"
+                          id="navbarDropdownMenuLink"
+                          role="button"
+                          aria-expanded="false"
+                        >
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="menu.html">Go to Menu</a>
+                    </li>
+                    <li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <a class="dropdown-item" href="burger.html">Burger</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="drinks.html">Drinks</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="nuggets.html">Chicken Nuggets</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="fries.html">French Fries</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto mx-lg-2" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scrollto mx-lg-2" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler fa-sharp fa-solid fa-bars"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+    <!-- Hero -->
+    <section id="heroes" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-uppercase sw-bold display-1">JLE Company</h1>
+          <h5 class="display-5 mb-2">We are Selling Quality Service Foods</h5>
+          <a href="apply.html" class="btn btn-outline-secondary m-3 ms-2 text-center">Apply for job</a>
+          <a href="menu.html" class="btn btn-light me-2 m-3 text-center">Get Food Now</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+<section>
+<div id="product" class="container-fluid my-5">
+  <h1 id="product-text" class="text-center">Products</h1>
+  <div class="row mt-5">
+    <div class="col-md-6 col-lg-3 col-sm-6 text-center d-flex justify-content-center align-items-center bg-image hover-zoom">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./images/burger1.jpg" alt="burger">
+        <div class="card-body">
+          <p class="card-text text-white display-4">Burgers</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 col-sm-6 text-center d-flex justify-content-center align-items-center bg-image hover-zoom">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/images/gatorade.jpg" alt="drinks">
+        <div class="card-body">
+          <p class="card-text text-white display-4">Drinks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 col-sm-6 text-center d-flex justify-content-center align-items-center bg-image hover-zoom">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./images/nuggets1.jpg" alt="nuggets">
+        <div class="card-body">
+          <p class="card-text text-white display-4">Nuggets</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 col-sm-6 text-center d-flex justify-content-center align-items-center bg-image hover-zoom">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./images/cheeseFries.jpg" alt="nuggets">
+        <div class="card-body">
+          <p class="card-text text-white display-4">Fries</p>
+        </div>
+      </div>
+    </div>
+    <div id="go-to-menu" class="btn btn-dark mt-3 text-center mt-2"><h5 class="display-5"><a href="menu.html" target="_blank">Go to Menu?</a></h5></div>
+  </div>
+
+    <!-- About -->
+    <section>
+      <div class="container my-5">
+      <h1 id="about-text" class="text-center my-3">JLE BURGER</h1>
+      <div class="row text-center">
+        <div class="col-6">
+          <h4>Refreshing</h3>
+        </div>
+        <div class="col-6">
+          <h4>Beat the Summer</h3>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Contact -->
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-8 col-lg-6">
+        <!-- Section Heading-->
+        <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+          <h3>Our Food <span> Team</span></h3>
+          <p>Crafting Culinary Delights, One Dish at a Time!</p>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- Single Advisor-->
+      <div class="col-12 col-sm-6 col-lg-3 mx-2">
+         <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+          <!-- Team Thumb-->
+          <a href="erin.html" target="_blank"><div class="advisor_thumb"><img src="./images/contact-image1.jpg" alt="erin"></a>
+            <!-- Social Info-->
+            <div class="social-info"><a href="https://www.facebook.com/Noldrin" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+          </div>
+          <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6>Erin Joy Doria</h6>
+            <p class="designation">Founder &amp; CEO</p>
+          </div>
+        </div>
+      </div>
+      <!-- Single Advisor-->
+      <div class="col-12 col-sm-6 col-lg-3 mx-2">
+        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+          <!-- Team Thumb-->
+          <a href="teo.html" target="_blank"><div class="advisor_thumb"><img src="./images/contact-image2.jpg" alt="teo"></a>
+            <!-- Social Info-->
+            <div class="social-info"><a href="https://www.facebook.com/juanteodoro.devera.3/"><i class="fa-brands fa-facebook"></i></a></div>
+          </div>
+          <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6>Juan Teo De Vera</h6>
+            <p class="designation">Founder</p>
+          </div>
+        </div>
+      </div>
+      <!-- Single Advisor-->
+      <div class="col-12 col-sm-6 col-lg-3 mx-2">
+        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+          <!-- Team Thumb-->
+          <a href="lance.html" target="_blank"><div class="advisor_thumb"><img src="./images/contact-image3.jpg" alt="lance"></a>
+            <!-- Social Info-->
+            <div class="social-info"><a href="https://www.facebook.com/profile.php?id=100008457991890"><i class="fa-brands fa-facebook"></i></a></div>
+          </div>
+          <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6>Lance Tryon Damasco</h6>
+            <p class="designation">Founder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+</section>
+    </main>
+
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="bus1.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-body-secondary">Menu</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="press-release.html" class="nav-link px-2 text-body-secondary">Press Release</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+</div>
